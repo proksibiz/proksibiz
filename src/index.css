@@ -4,108 +4,102 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
-/* Proksi Biz Solution Design System */
+/* Proksi Biz Solution - Dark Modern Sleek Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 25% 10%;
+    /* Dark Modern Base */
+    --background: 220 20% 7%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 25% 10%;
+    --card: 220 20% 10%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 10%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 220 80% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 35 100% 55%;
+    --primary-foreground: 220 20% 7%;
 
-    --secondary: 35 95% 55%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 15% 95%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 55%;
 
-    --accent: 35 95% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 35 100% 55%;
+    --accent-foreground: 220 20% 7%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 220 80% 45%;
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 35 100% 55%;
 
     --radius: 0.75rem;
 
     /* Custom Colors */
-    --navy: 220 60% 20%;
-    --navy-light: 220 50% 30%;
-    --amber: 35 95% 55%;
-    --amber-light: 35 100% 65%;
-    --amber-dark: 30 90% 45%;
-    --sky: 200 85% 95%;
-    --sky-dark: 200 70% 85%;
+    --navy: 220 25% 5%;
+    --navy-light: 220 20% 12%;
+    --amber: 35 100% 55%;
+    --amber-light: 40 100% 65%;
+    --amber-dark: 30 95% 45%;
+    --glass: 220 20% 15%;
+    --glass-border: 220 15% 22%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220 60% 20%) 0%, hsl(220 50% 35%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(35 95% 55%) 0%, hsl(30 90% 45%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 15% 98%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 25% 5%) 0%, hsl(220 20% 12%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(35 100% 55%) 0%, hsl(30 95% 45%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(220 20% 12%) 0%, hsl(220 20% 8%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(220 20% 15% / 0.6) 0%, hsl(220 20% 10% / 0.4) 100%);
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(220 25% 10% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(220 25% 10% / 0.08), 0 2px 4px -2px hsl(220 25% 10% / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(220 25% 10% / 0.1), 0 4px 6px -4px hsl(220 25% 10% / 0.08);
-    --shadow-xl: 0 20px 25px -5px hsl(220 25% 10% / 0.1), 0 8px 10px -6px hsl(220 25% 10% / 0.08);
-    --shadow-glow: 0 0 40px hsl(35 95% 55% / 0.3);
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.4), 0 2px 4px -2px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.5), 0 4px 6px -4px hsl(0 0% 0% / 0.4);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.5), 0 8px 10px -6px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 40px hsl(35 100% 55% / 0.25);
+    --shadow-glow-strong: 0 0 60px hsl(35 100% 55% / 0.35);
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 35 100% 55%;
+    --sidebar-primary-foreground: 220 20% 7%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 35 100% 55%;
   }
 
   .dark {
-    --background: 220 25% 8%;
+    --background: 220 20% 7%;
     --foreground: 0 0% 98%;
-
-    --card: 220 25% 12%;
+    --card: 220 20% 10%;
     --card-foreground: 0 0% 98%;
-
-    --popover: 220 25% 12%;
+    --popover: 220 20% 10%;
     --popover-foreground: 0 0% 98%;
-
-    --primary: 220 80% 55%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 35 95% 55%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 220 20% 18%;
-    --muted-foreground: 220 10% 60%;
-
-    --accent: 35 95% 55%;
-    --accent-foreground: 0 0% 100%;
-
+    --primary: 35 100% 55%;
+    --primary-foreground: 220 20% 7%;
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 35 100% 55%;
+    --accent-foreground: 220 20% 7%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 220 20% 20%;
-    --input: 220 20% 20%;
-    --ring: 220 80% 55%;
-    
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 35 100% 55%;
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 35 100% 55%;
+    --sidebar-primary-foreground: 220 20% 7%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 35 100% 55%;
   }
 }
 
@@ -125,13 +119,6 @@
 }
 
 @layer utilities {
-  .text-gradient-hero {
-    background: var(--gradient-hero);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
   .text-gradient-accent {
     background: var(--gradient-accent);
     -webkit-background-clip: text;
@@ -147,7 +134,21 @@
     background: var(--gradient-accent);
   }
 
+  .bg-glass {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--glass-border));
+  }
+
   .shadow-glow {
     box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-glow-strong {
+    box-shadow: var(--shadow-glow-strong);
+  }
+
+  .border-glass {
+    border-color: hsl(var(--glass-border));
   }
 }
