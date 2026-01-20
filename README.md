@@ -1,73 +1,137 @@
-# Welcome to your Lovable project
+# PROKSI BIZ SOLUTION
 
-## Project info
+**Syarikat Penyelenggaraan Rumah Terpercaya di Perak**
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+> One-Stop Solution untuk semua keperluan penyelenggaraan rumah anda - Elektrik, Plumbing, Aircond, Repair & Mengecat
 
-## How can I edit this code?
+## 🏢 Tentang Kami
 
-There are several ways of editing your application.
+Proksi Biz Solution adalah syarikat SSM berdaftar (003725441-K) yang mengkhusus dalam perkhidmatan Building Maintenance. Kami telah dipercayai oleh 500+ pelanggan di seluruh Perak untuk menyelesaikan masalah penyelenggaraan rumah dengan profesional, cepat dan berpatutan.
 
-**Use Lovable**
+### ⭐ Kenapa Pilih Kami?
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- ✅ **SSM Berdaftar** - Syarikat sah dan berdaftar
+- ✅ **5+ Tahun Pengalaman** - Pasukan berpengalaman dan mahir
+- ✅ **500+ Projek Siap** - Rekod terbukti & pelanggan berpuas hati
+- ✅ **Response <24 Jam** - Cepat & efisien
+- ✅ **Harga Transparent** - Tiada caj tersembunyi
+- ✅ **Warranty Tersedia** - Jaminan kualiti kerja
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Perkhidmatan Kami
 
-**Use your preferred IDE**
+### 1. **Perkhidmatan Elektrik** (Dari RM50)
+- Pemasangan kipas siling & water heater
+- Kerja looping & tambah point elektrik
+- Pemasangan & upgrade Distribution Board (DB)
+- Troubleshoot masalah trip & short circuit
+- Tukar & repair aksesori elektrik
+- Pembaikan wiring rosak atau terbakar
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 2. **Repair Paip & Plumbing** (Dari RM50)
+- Pembaikan paip bocor & merembes
+- Penggantian paip pecah atau rosak
+- Pemasangan laluan paip baru
+- Penggantian & pembaikan tap/faucet
+- Troubleshoot masalah tekanan air rendah
+- Pemasangan & penyelenggaraan water heater
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 3. **Repair Alatan Rumah** (Dari RM40)
+- Pembaikan mesin basuh
+- Repair peti ais & troubleshoot
+- Pembaikan kipas rosak
+- Repair water heater
+- Pembaikan rice cooker & peralatan dapur
+- Troubleshoot & ganti komponen elektronik
 
-Follow these steps:
+### 4. **Repair Air-Cond** (Dari RM60)
+- Troubleshoot masalah aircond tak sejuk
+- Servis & chemical wash aircond
+- Top up & repair kebocoran gas
+- Penggantian komponen rosak (PCB, capacitor)
+- Repair masalah air bocor/menitis
+- Overhaul & deep cleaning aircond
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 5. **Perkhidmatan Mengecat** (Dari RM4/kaki²)
+- Mengecat dinding dalaman rumah
+- Mengecat bahagian luar/exterior rumah
+- Mengecat pagar, grill & pintu pagar
+- Repair & preparation sebelum cat
+- Mengecat plaster ceiling & partition
+- Mengecat pintu, tingkap & woodwork
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🚨 **Perkhidmatan Kecemasan 24 Jam**
+Emergency? Kami sedia membantu 24/7!
+- Emergency elektrik (trip, short circuit, terbakar)
+- Emergency plumbing (paip pecah, banjir air)
+- Aircond rosak teruk
+- Masalah elektrik berbahaya
+- Response dalam masa 1-2 jam*
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📞 Hubungi Kami
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+- **WhatsApp**: [01999 843 99](https://wa.me/60199984399)
+- **Facebook**: [Proksi Biz Solution](https://facebook.com/proksibizmy)
+- **Email**: hi@proksi.biz
+- **Kawasan**: Ipoh & Sekitar Perak
+
+## 💻 Tech Stack
+
+Website ini dibangunkan menggunakan:
+
+- **Frontend Framework**: React + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Animation**: Custom CSS animations
+
+## 🚀 Development Setup
+
+```bash
+# Clone repository
+git clone <repository-url>
+
+# Navigate to project
+cd proksibiz
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+## 📝 Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+proksibiz/
+├── src/
+│   ├── components/     # React components
+│   │   ├── ui/        # shadcn/ui components
+│   │   ├── Hero.tsx
+│   │   ├── Services.tsx
+│   │   ├── About.tsx
+│   │   ├── Testimonials.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Footer.tsx
+│   │   └── Navbar.tsx
+│   ├── pages/         # Page components
+│   ├── lib/           # Utilities
+│   └── main.tsx       # App entry point
+├── public/            # Static assets
+└── package.json
+```
 
-**Use GitHub Codespaces**
+## 📄 License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+© 2026 PROKSI BIZ SOLUTION. Hakcipta Terpelihara.
 
-## What technologies are used for this project?
+---
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Built with ❤️ for better home maintenance services in Perak**
