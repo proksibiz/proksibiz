@@ -2,9 +2,9 @@ import { Phone, MessageCircle, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
-  const whatsappNumber = "60123456789"; // Tukar ke nombor sebenar
+  const whatsappNumber = "60199984399"; // Tukar ke nombor sebenar
   const whatsappMessage = encodeURIComponent(
-    "Assalamualaikum! Saya berminat untuk mendapatkan khidmat dari Proksi Biz Solution."
+    "Hi! Saya berminat untuk mendapatkan khidmat dari Proksi Biz Solution."
   );
 
   return (
