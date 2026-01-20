@@ -69,9 +69,9 @@ export default {
           light: "hsl(var(--amber-light))",
           dark: "hsl(var(--amber-dark))",
         },
-        sky: {
-          DEFAULT: "hsl(var(--sky))",
-          dark: "hsl(var(--sky-dark))",
+        glass: {
+          DEFAULT: "hsl(var(--glass))",
+          border: "hsl(var(--glass-border))",
         },
       },
       borderRadius: {

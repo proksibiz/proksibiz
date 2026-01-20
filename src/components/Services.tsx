@@ -1,5 +1,4 @@
 import { Zap, Droplets, Wrench, Wind, Paintbrush } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
   {
@@ -76,11 +75,14 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-24 bg-background relative">
+      {/* Subtle gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-transparent" />
+      
+      <div className="container relative z-10 mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-sm font-semibold text-secondary uppercase tracking-wider mb-3">
+          <span className="inline-block text-sm font-semibold text-primary uppercase tracking-widest mb-3">
             Perkhidmatan Kami
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
@@ -95,44 +97,46 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <Card
+            <div
               key={index}
-              className="group relative overflow-hidden border-border hover:border-secondary/50 transition-all duration-300 hover:shadow-xl"
+              className="group relative bg-glass backdrop-blur-md border border-glass-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-500 hover:shadow-glow"
             >
-              {/* Gradient Overlay on Hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              {/* Hover Gradient */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              <CardHeader className="relative">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors duration-300">
-                    <service.icon className="w-7 h-7 text-primary group-hover:text-secondary transition-colors duration-300" />
+              <div className="relative">
+                {/* Header */}
+                <div className="flex items-start justify-between mb-5">
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                    <service.icon className="w-7 h-7 text-primary" />
                   </div>
-                  <span className="inline-block bg-secondary/10 text-secondary font-bold text-sm px-3 py-1 rounded-full">
+                  <span className="inline-block bg-primary/10 text-primary font-bold text-sm px-4 py-1.5 rounded-full border border-primary/20">
                     {service.price}
                   </span>
                 </div>
-                <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+
+                {/* Title */}
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
                   {service.title}
-                </CardTitle>
-                <p className="text-muted-foreground text-sm mt-2">
+                </h3>
+                <p className="text-muted-foreground text-sm mb-5">
                   {service.description}
                 </p>
-              </CardHeader>
-              
-              <CardContent className="relative pt-0">
-                <ul className="space-y-2">
+
+                {/* Items List */}
+                <ul className="space-y-2.5">
                   {service.items.map((item, itemIndex) => (
                     <li
                       key={itemIndex}
-                      className="flex items-start gap-2 text-sm text-muted-foreground"
+                      className="flex items-start gap-3 text-sm text-muted-foreground group-hover:text-foreground/80 transition-colors duration-300"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>

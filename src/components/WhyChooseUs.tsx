@@ -25,11 +25,15 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-20 bg-muted/50">
-      <div className="container mx-auto px-4">
+    <section className="py-24 bg-secondary/30 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
+
+      <div className="container relative z-10 mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-sm font-semibold text-secondary uppercase tracking-wider mb-3">
+          <span className="inline-block text-sm font-semibold text-primary uppercase tracking-widest mb-3">
             Kenapa Pilih Kami
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
@@ -47,13 +51,13 @@ const WhyChooseUs = () => {
               key={index}
               className="text-center group"
             >
-              <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-primary to-navy-light flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <feature.icon className="w-10 h-10 text-primary-foreground" />
+              <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-glass backdrop-blur-md border border-glass-border flex items-center justify-center group-hover:border-primary/50 group-hover:shadow-glow transition-all duration-500">
+                <feature.icon className="w-10 h-10 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">
+              <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
                 {feature.title}
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground leading-relaxed">
                 {feature.description}
               </p>
             </div>

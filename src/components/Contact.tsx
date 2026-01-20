@@ -8,24 +8,23 @@ const Contact = () => {
   );
 
   return (
-    <section id="contact" className="py-20 bg-gradient-hero relative overflow-hidden">
-      {/* Background Decorations */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-1/4 w-72 h-72 bg-secondary rounded-full blur-3xl" />
-        <div className="absolute bottom-10 right-1/4 w-96 h-96 bg-secondary rounded-full blur-3xl" />
+    <section id="contact" className="py-24 bg-secondary/30 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[200px]" />
       </div>
 
       <div className="container relative z-10 mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           {/* Section Header */}
-          <span className="inline-block text-sm font-semibold text-secondary uppercase tracking-wider mb-3">
+          <span className="inline-block text-sm font-semibold text-primary uppercase tracking-widest mb-3">
             Hubungi Kami
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Ada Masalah Rumah?{" "}
-            <span className="text-secondary">Kami Sedia Membantu!</span>
+            <span className="text-primary">Kami Sedia Membantu!</span>
           </h2>
-          <p className="text-primary-foreground/80 text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
             Hubungi kami melalui WhatsApp untuk mendapatkan sebut harga percuma. 
             Kami akan respond secepat mungkin!
           </p>
@@ -34,7 +33,7 @@ const Contact = () => {
           <Button
             asChild
             size="lg"
-            className="bg-secondary hover:bg-amber-dark text-secondary-foreground font-bold text-xl px-10 py-7 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow mb-12"
+            className="bg-primary hover:bg-amber-dark text-primary-foreground font-bold text-xl px-12 py-8 rounded-2xl shadow-glow hover:shadow-glow-strong transition-all duration-300 mb-16"
           >
             <a
               href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
@@ -49,21 +48,22 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6">
-              <Phone className="w-8 h-8 text-secondary mx-auto mb-3" />
-              <h3 className="font-semibold text-primary-foreground mb-1">Telefon</h3>
-              <p className="text-primary-foreground/70">+60 12-345 6789</p>
-            </div>
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6">
-              <MapPin className="w-8 h-8 text-secondary mx-auto mb-3" />
-              <h3 className="font-semibold text-primary-foreground mb-1">Kawasan</h3>
-              <p className="text-primary-foreground/70">Selangor & Kuala Lumpur</p>
-            </div>
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6">
-              <Clock className="w-8 h-8 text-secondary mx-auto mb-3" />
-              <h3 className="font-semibold text-primary-foreground mb-1">Waktu Operasi</h3>
-              <p className="text-primary-foreground/70">Isnin - Ahad, 8am - 8pm</p>
-            </div>
+            {[
+              { icon: Phone, title: "Telefon", info: "+60 12-345 6789" },
+              { icon: MapPin, title: "Kawasan", info: "Selangor & Kuala Lumpur" },
+              { icon: Clock, title: "Waktu Operasi", info: "Isnin - Ahad, 8am - 8pm" },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-glass backdrop-blur-md border border-glass-border rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 group"
+              >
+                <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <item.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-1">{item.title}</h3>
+                <p className="text-muted-foreground">{item.info}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
