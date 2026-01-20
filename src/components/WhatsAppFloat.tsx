@@ -1,0 +1,25 @@
+import { MessageCircle } from "lucide-react";
+
+const WhatsAppFloat = () => {
+  const whatsappNumber = "60123456789"; // Tukar ke nombor sebenar
+  const whatsappMessage = encodeURIComponent(
+    "Assalamualaikum! Saya berminat untuk mendapatkan khidmat dari Proksi Biz Solution."
+  );
+
+  return (
+    <a
+      href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#1da851] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 animate-pulse-glow"
+      aria-label="Chat on WhatsApp"
+      style={{
+        boxShadow: "0 0 20px rgba(37, 211, 102, 0.4)",
+      }}
+    >
+      <MessageCircle className="w-7 h-7 text-white" />
+    </a>
+  );
+};
+
+export default WhatsAppFloat;
