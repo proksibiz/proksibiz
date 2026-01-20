@@ -3,23 +3,23 @@ import { Shield, Clock, BadgeCheck, Wallet } from "lucide-react";
 const features = [
   {
     icon: BadgeCheck,
-    title: "Tukang Berpengalaman",
-    description: "Pasukan kami terlatih dan berpengalaman dalam pelbagai jenis kerja penyelenggaraan rumah.",
+    title: "Tukang Profesional",
+    description: "Bukan part-timer! Pasukan kami terlatih, berpengalaman 5+ tahun dan handle lebih 500+ projek dengan jayanya.",
   },
   {
     icon: Shield,
-    title: "Kerja Berkualiti",
-    description: "Kami menggunakan bahan dan peralatan berkualiti untuk memastikan hasil kerja yang tahan lama.",
+    title: "Warranty & Jaminan",
+    description: "Kami berdiri di sebalik kerja kami. Warranty tersedia dan customer support sentiasa bersedia membantu anda.",
   },
   {
     icon: Wallet,
-    title: "Harga Telus",
-    description: "Tiada caj tersembunyi. Kami berikan sebut harga yang jelas sebelum memulakan kerja.",
+    title: "Harga Paling Kompetitif",
+    description: "Dapatkan quotation percuma! Harga telus, tiada caj tersembunyi. Compare dengan lain, pasti kami lebih berbaloi!",
   },
   {
     icon: Clock,
-    title: "Respons Pantas",
-    description: "Kami komited untuk respond kepada pertanyaan anda secepat mungkin.",
+    title: "Response <24 Jam",
+    description: "Emergency? Kami faham! Response dalam masa 24 jam atau kurang. Masalah rumah diselesaikan dengan segera.",
   },
 ];
 
@@ -37,10 +37,10 @@ const WhyChooseUs = () => {
             Kenapa Pilih Kami
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Jaminan <span className="text-primary">Proksi Biz Solution</span>
+            Bezakan Kami Dari{" "}<span className="text-primary">Tukang Biasa</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Kepuasan anda adalah keutamaan kami
+            Bukan janji kosong - ini komitmen kami kepada setiap pelanggan
           </p>
         </div>
 

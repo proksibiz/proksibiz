@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Home, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const whatsappNumber = "60123456789";
+  const whatsappNumber = "60199984399";
   const whatsappMessage = encodeURIComponent(
-    "Assalamualaikum! Saya berminat untuk mendapatkan khidmat dari Proksi Biz Solution."
+    "Hi! Saya berminat untuk mendapatkan khidmat dari Proksi Biz Solution."
   );
 
   useEffect(() => {
@@ -35,13 +35,18 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center group-hover:shadow-glow transition-shadow duration-300">
-              <Home className="w-6 h-6 text-primary-foreground" />
+          <a href="#" className="flex items-center gap-3 group">
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+              <img src="/favicon.png" alt="PROKSI BIZ SOLUTION" className="w-full h-full object-contain" />
             </div>
             <div className="hidden sm:block">
-              <span className="font-bold text-lg text-foreground">Proksi Biz</span>
-              <span className="font-bold text-lg text-primary"> Solution</span>
+              <div className="flex items-baseline gap-1">
+                <span className="font-bold text-xl text-foreground">PROKSI BIZ</span>
+                <span className="font-bold text-xl text-primary">SOLUTION</span>
+              </div>
+              <div className="text-[10px] text-muted-foreground font-medium tracking-wider uppercase">
+                Building Maintenance Expert
+              </div>
             </div>
           </a>
 
@@ -51,10 +56,10 @@ const Navbar = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-muted-foreground hover:text-primary font-medium transition-colors relative group"
+                className="text-muted-foreground hover:text-primary font-semibold transition-all duration-300 relative group"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-amber-dark rounded-full transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </div>
@@ -63,7 +68,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <Button
               asChild
-              className="bg-primary hover:bg-amber-dark text-primary-foreground font-semibold shadow-glow hover:shadow-glow-strong transition-all duration-300"
+              className="bg-gradient-to-r from-primary to-amber-dark hover:from-amber-dark hover:to-primary text-primary-foreground font-bold shadow-glow hover:shadow-glow-strong transition-all duration-300 hover:scale-105"
             >
               <a
                 href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
@@ -72,7 +77,8 @@ const Navbar = () => {
                 className="flex items-center gap-2"
               >
                 <Phone className="w-4 h-4" />
-                WhatsApp
+                <span className="hidden lg:inline">WhatsApp Kami</span>
+                <span className="lg:hidden">Call</span>
               </a>
             </Button>
           </div>
@@ -80,7 +86,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
+            className="md:hidden p-2 rounded-lg text-foreground hover:text-primary hover:bg-secondary/50 transition-all duration-300"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -89,22 +95,22 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-border bg-background/95 backdrop-blur-xl animate-fade-in">
-            <div className="flex flex-col gap-2">
+          <div className="md:hidden py-4 border-t border-border/50 bg-background/98 backdrop-blur-xl animate-fade-in shadow-lg">
+            <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-muted-foreground hover:text-primary hover:bg-secondary/50 font-medium py-3 px-4 rounded-lg transition-all"
+                  className="text-muted-foreground hover:text-primary hover:bg-secondary/70 font-semibold py-3 px-4 rounded-xl transition-all duration-300 hover:translate-x-1"
                 >
                   {link.label}
                 </a>
               ))}
-              <div className="pt-2 px-4">
+              <div className="pt-3 px-4">
                 <Button
                   asChild
-                  className="bg-primary hover:bg-amber-dark text-primary-foreground font-semibold w-full"
+                  className="bg-gradient-to-r from-primary to-amber-dark hover:from-amber-dark hover:to-primary text-primary-foreground font-bold w-full shadow-glow"
                 >
                   <a
                     href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
@@ -113,7 +119,7 @@ const Navbar = () => {
                     className="flex items-center justify-center gap-2"
                   >
                     <Phone className="w-4 h-4" />
-                    WhatsApp Kami
+                    WhatsApp: 01999 843 99
                   </a>
                 </Button>
               </div>

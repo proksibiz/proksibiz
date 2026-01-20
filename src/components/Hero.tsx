@@ -2,9 +2,9 @@ import { Phone, CheckCircle, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
-  const whatsappNumber = "60123456789"; // Tukar ke nombor sebenar
+  const whatsappNumber = "60199984399"; // Tukar ke nombor sebenar
   const whatsappMessage = encodeURIComponent(
-    "Assalamualaikum! Saya berminat untuk mendapatkan khidmat dari Proksi Biz Solution."
+    "Hi! Saya berminat untuk mendapatkan khidmat dari Proksi Biz Solution."
   );
 
   return (
@@ -36,18 +36,20 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-foreground leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Masalah Rumah Buat Anda{" "}
-            <span className="text-gradient-accent">Pening?</span>
+            Penat Cari Tukang{" "}
+            <span className="text-gradient-accent">Tak Reliable?</span>
           </h1>
           
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground/90 mb-8 animate-fade-in" style={{ animationDelay: "0.15s" }}>
-            <span className="text-primary">Proksi Biz Solution</span> Adalah Penyelesaiannya!
+            Kami Settle Masalah Rumah Anda{" "}
+            <span className="text-primary">CEPAT, BERKUALITI & BERPATUTAN!</span>
           </h2>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Syarikat berdaftar dalam bidang Building Maintenance yang menawarkan pelbagai perkhidmatan penyelenggaraan untuk kediaman anda. 
-            <span className="text-foreground font-medium"> Tukang berpengalaman, kerja berkualiti dan harga telus.</span>
+            <span className="text-foreground font-bold">Letih tunggu tukang yang tak datang? Kecewa dengan kerja separuh jalan?</span> Proksi Biz Solution adalah syarikat SSM berdaftar yang KOMITED memberikan servis terbaik.
+            <br/>
+            <span className="text-primary font-semibold inline-block mt-3">✓ Response {'<'}24 Jam ✓ Harga Transparent ✓ Warranty Tersedia ✓ Tukang Berpengalaman 5+ Tahun</span>
           </p>
 
           {/* CTA Buttons */}
@@ -80,10 +82,10 @@ const Hero = () => {
           {/* Trust Indicators */}
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             {[
-              { number: "5+", label: "Perkhidmatan" },
-              { number: "500+", label: "Pelanggan Gembira" },
-              { number: "5★", label: "Rating Tertinggi" },
-              { number: "24/7", label: "Respons Pantas" },
+              { number: "5+", label: "Jenis Perkhidmatan" },
+              { number: "500+", label: "Rumah Diselenggara" },
+              { number: "5★", label: "Rating Pelanggan" },
+              { number: "<24j", label: "Masa Response" },
             ].map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className="text-3xl md:text-4xl font-extrabold text-primary mb-1 group-hover:scale-110 transition-transform duration-300">
