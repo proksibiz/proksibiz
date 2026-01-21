@@ -39,7 +39,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <div className="w-12 h-12 rounded-xl flex items-center justify-center group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-              <img src="/favicon.png" alt="PROKSI BIZ SOLUTION" className="w-full h-full object-contain" />
+              <img src="/proksibiz/favicon.png" alt="PROKSI BIZ SOLUTION" className="w-full h-full object-contain" />
             </div>
             <div className="hidden sm:block">
               <div className="flex items-baseline gap-1">
