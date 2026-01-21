@@ -2,8 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -14,27 +14,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
+      
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
+          
       - name: Install dependencies
-        run: npm install
-
-      - name: Build
+        run: npm ci
+        
+      - name: Create production env file
+        run: |
+          echo "VITE_FACEBOOK_PAGE_ID=${{ secrets.VITE_FACEBOOK_PAGE_ID }}" >> .env.production
+          echo "VITE_FACEBOOK_APP_ID=${{ secrets.VITE_FACEBOOK_APP_ID }}" >> .env.production
+          echo "VITE_FACEBOOK_ACCESS_TOKEN=${{ secrets.VITE_FACEBOOK_ACCESS_TOKEN }}" >> .env.production
+        
+      - name: Build with environment variables
         run: npm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: ./dist
 
   deploy:
     environment:
