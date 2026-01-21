@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
+import FacebookFeed from "@/components/FacebookFeed";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -18,6 +19,7 @@ const Index = () => {
         <WhyChooseUs />
         <About />
         <Testimonials />
+        <FacebookFeed />
         <Contact />
       </main>
       <Footer />
