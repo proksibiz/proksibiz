@@ -49,9 +49,9 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: Phone, title: "Telefon", info: "+60 12-345 6789" },
-              { icon: MapPin, title: "Kawasan", info: "Selangor & Kuala Lumpur" },
-              { icon: Clock, title: "Waktu Operasi", info: "Isnin - Ahad, 8am - 8pm" },
+              { icon: Phone, title: "Telefon", info: "01999 843 99" },
+              { icon: MapPin, title: "Kawasan", info: "Ipoh & Sekitar" },
+              { icon: Clock, title: "Waktu Operasi", info: "Isnin - Ahad, 9am - 6pm" },
             ].map((item, index) => (
               <div
                 key={index}

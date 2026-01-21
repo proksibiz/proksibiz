@@ -1,4 +1,4 @@
-import { Zap, Droplets, Wrench, Wind, Paintbrush, AlertCircle } from "lucide-react";
+import { Zap, Droplets, Wrench, Wind, Paintbrush, AlertCircle, Phone } from "lucide-react";
 
 const services = [
   {
@@ -74,7 +74,7 @@ const services = [
   {
     icon: AlertCircle,
     title: "Perkhidmatan Kecemasan 24 Jam",
-    price: "Call Untuk Quote",
+    price: "Kecemasan",
     description: "EMERGENCY? Kami sedia membantu 24/7! Elektrik terbakar, paip pecah, aircond rosak - panggil kami SEKARANG!",
     items: [
       "Emergency elektrik - trip, short circuit, terbakar",
@@ -166,7 +166,7 @@ const Services = () => {
                 </p>
 
                 {/* Items List */}
-                <ul className="space-y-2.5">
+                <ul className="space-y-2.5 mb-5">
                   {service.items.map((item, itemIndex) => (
                     <li
                       key={itemIndex}
@@ -179,6 +179,17 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
+
+                {/* Emergency Call Button */}
+                {service.isEmergency && (
+                  <a
+                    href="tel:+60199984399"
+                    className="mt-4 w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold px-6 py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg"
+                  >
+                    <Phone className="w-5 h-5 animate-pulse" />
+                    <span>Call Kami</span>
+                  </a>
+                )}
               </div>
             </div>
           ))}

@@ -53,7 +53,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section id="testimonials" className="py-24 bg-background relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0" style={{
