@@ -22,6 +22,8 @@ const Navbar = () => {
   const navLinks = [
     { label: "Utama", href: "#" },
     { label: "Perkhidmatan", href: "#services" },
+    { label: "Testimoni", href: "#testimonials" },
+    { label: "Facebook", href: "#facebook" },
     { label: "Tentang Kami", href: "#about" },
     { label: "Hubungi", href: "#contact" },
   ];
