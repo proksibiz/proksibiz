@@ -110,11 +110,20 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  #root {
+    overflow-x: hidden;
+    width: 100%;
   }
 }
 
